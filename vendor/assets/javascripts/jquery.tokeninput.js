@@ -132,7 +132,7 @@ var methods = {
 }
 
 // Expose the .tokenInput function to jQuery as a plugin
-$.fn.tokenInputModified = function (method) {
+$.fn.tokenInput = function (method) {
     // Method calling and initialization logic
     if(methods[method]) {
         return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
